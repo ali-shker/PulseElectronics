@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PULSE Electronics — Power That Moves With You</title>
+<meta name="description" content="PULSE Electronics — laptops, phones, accessories and gaming gear with fast delivery, real warranty and a store that never sits still.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style/fontawesome/css/all.css">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<!-- =================== HEADER / NAVBAR =================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-inner">
+    <a href="#home" class="brand">
+      <span class="brand-mark"><i class="fas fa-bolt"></i></span>
+      <span>PULSE<small>ELECTRONICS</small></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#products" class="nav-link">Products</a>
+      <a href="#deals" class="nav-link">Deals</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="user-chip" id="userChip">
+        <span class="avatar" id="userAvatar">U</span>
+        <span id="userNameLabel">User</span>
+        <button id="logoutBtn" class="icon-btn" style="width:26px;height:26px;" title="Log out" aria-label="Log out">
+          <i class="fas fa-arrow-right-from-bracket" style="font-size:11px;"></i>
+        </button>
+      </div>
+
+      <button class="btn btn-ghost btn-sm" id="loginOpenBtn">
+        <i class="fas fa-user"></i> Login
+      </button>
+
+      <button class="icon-btn" id="darkModeBtn" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <i class="fas fa-moon" id="darkModeIcon"></i>
+      </button>
+
+      <button class="icon-btn" id="cartOpenBtn" aria-label="Open cart" title="Cart">
+        <i class="fas fa-cart-shopping"></i>
+        <span class="badge-count" id="cartCount">0</span>
+      </button>
+
+      <button class="icon-btn hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <i class="fas fa-bars" id="hamburgerIcon"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#deals">Deals</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <div class="mm-actions">
+      <button class="btn btn-primary btn-block" id="mmLoginBtn"><i class="fas fa-user"></i> Login</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<!-- =================== HERO =================== -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="pulse-dot"></span> Now shipping across the region</div>
+      <h1>Power That<br>Moves <span class="grad">With You.</span></h1>
+      <p class="lead">Laptops, phones, accessories and gaming gear — chosen for people who don't like sitting still. Premium quality, honest prices, zero drama.</p>
+      <div class="hero-ctas">
+        <a href="#products" class="btn btn-primary"><i class="fas fa-bolt"></i> Shop Now</a>
+        <a href="#deals" class="btn btn-ghost"><i class="fas fa-tag"></i> View Deals</a>
+      </div>
+      <div class="hero-trust">
+        <div><strong>5K+</strong><span>Happy customers</span></div>
+        <div><strong>300+</strong><span>Products in stock</span></div>
+        <div><strong>24/7</strong><span>Real human support</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="orbit-ring r3"></div>
+      <div class="orbit-ring r2"><i></i></div>
+      <div class="orbit-ring r1"></div>
+      <div class="hero-card">
+        <img src="https://images.pexels.com/photos/8569471/pexels-photo-8569471.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Featured workspace with laptop and accessories">
+        <div class="hc-top">
+          <h4>Featured&nbsp;Bundle</h4>
+        </div>
+        <div class="price-now">$1,249.00</div>
+        <div class="live-tag"><span class="pulse-dot" style="width:6px;height:6px;"></span> 42 people viewing this now</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== SERVICES =================== -->
+<section class="section section-tight" aria-label="Services">
+  <div class="container">
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-truck-fast"></i></div>
+        <h3>Fast Delivery</h3>
+        <p>Most orders reach your door in 24–48 hours, tracked door to door.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-shield-halved"></i></div>
+        <h3>2-Year Warranty</h3>
+        <p>Every device is covered — no fine print, no surprise fees.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-lock"></i></div>
+        <h3>Secure Payment</h3>
+        <p>Checkout is encrypted end to end. Your data stays yours.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-headset"></i></div>
+        <h3>Customer Support</h3>
+        <p>Real people, 24/7 — over chat, phone, or email.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CATEGORIES + PRODUCTS =================== -->
+<section class="section" id="products">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span class="pulse-dot"></span> Catalog</div>
+      <h2>Browse the Collection</h2>
+      <p>Every product below is rendered live from our catalog — filter, search, and sort to find what fits.</p>
+    </div>
+
+    <div class="cat-tabs" id="catTabs" role="tablist" aria-label="Product categories">
+      <!-- injected by JS -->
+    </div>
+
+    <div class="products-toolbar">
+      <div class="search-box">
+        <i class="fas fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Search products by name..." aria-label="Search products">
+        <button class="search-clear" id="searchClear" aria-label="Clear search"><i class="fas fa-xmark"></i></button>
+      </div>
+      <select class="sort-select" id="sortSelect" aria-label="Sort products">
+        <option value="default">Default Sort</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="name-asc">Name A–Z</option>
+      </select>
+    </div>
+
+    <p class="results-meta" id="resultsMeta"></p>
+
+    <div class="products-grid" id="productsGrid">
+      <!-- injected by JS -->
+    </div>
+
+    <div class="empty-state" id="emptyState" style="display:none;">
+      <i class="fas fa-box-open"></i>
+      <p>No products match your search. Try a different keyword or category.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =================== DEALS =================== -->
+<section class="section section-tight" id="deals">
+  <div class="container">
+    <div class="deals reveal">
+      <div class="deals-copy">
+        <div class="eyebrow"><span class="pulse-dot" style="background:var(--amber);"></span> Limited-time offer</div>
+        <h2>Save Up To 30% On Selected Electronics</h2>
+        <p>Our biggest markdowns of the season on laptops, audio and gaming gear — while stock lasts.</p>
+        <a href="#products" class="btn btn-amber"><i class="fas fa-fire"></i> Shop the Deals</a>
+      </div>
+      <div class="countdown" id="countdown" aria-label="Deal countdown timer">
+        <div class="cd-unit"><strong id="cdDays">00</strong><span>Days</span></div>
+        <div class="cd-sep"><span class="pulse-dot"></span></div>
+        <div class="cd-unit"><strong id="cdHours">00</strong><span>Hours</span></div>
+        <div class="cd-sep"><span class="pulse-dot"></span></div>
+        <div class="cd-unit"><strong id="cdMinutes">00</strong><span>Mins</span></div>
+        <div class="cd-sep"><span class="pulse-dot"></span></div>
+        <div class="cd-unit"><strong id="cdSeconds">00</strong><span>Secs</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== ABOUT =================== -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-media reveal">
+      <img src="https://images.pexels.com/photos/26889798/pexels-photo-26889798.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Modern desk setup with Apple electronics">
+    </div>
+    <div class="about-copy reveal">
+      <div class="eyebrow"><span class="pulse-dot"></span> About Pulse</div>
+      <h2>We build a store, not a warehouse.</h2>
+      <p>PULSE started with one idea: buying electronics shouldn't feel like negotiating with a stranger. We hand-pick every laptop, phone and accessory we sell, back it with a real warranty, and keep a support line staffed by people who actually use this stuff.</p>
+      <p>No filler catalog, no bait-and-switch pricing — just gear that's worth carrying, and a team that stands behind it.</p>
+      <div class="stat-row">
+        <div><strong>5K+</strong><span>Happy Customers</span></div>
+        <div><strong>300+</strong><span>Products</span></div>
+        <div><strong>24/7</strong><span>Support</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== REVIEWS =================== -->
+<section class="section section-tight">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;"><span class="pulse-dot"></span> Testimonials</div>
+      <h2>What Customers Say</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="quote">"Ordered a laptop on a Tuesday, had it Thursday morning. Packaging was solid and the price beat every other store I checked."</p>
+        <div class="review-who">
+          <div class="review-avatar">R</div>
+          <div><strong>Rania K.</strong><span>Verified Buyer</span></div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i></div>
+        <p class="quote">"Their support team actually picks up the phone. Helped me pick the right headphones instead of just upselling me."</p>
+        <div class="review-who">
+          <div class="review-avatar">O</div>
+          <div><strong>Omar S.</strong><span>Verified Buyer</span></div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="quote">"Bought my gaming keyboard and mouse in the same order, both arrived earlier than promised. Will keep coming back."</p>
+        <div class="review-who">
+          <div class="review-avatar">L</div>
+          <div><strong>Layla M.</strong><span>Verified Buyer</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CONTACT =================== -->
+<section class="section" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <div class="eyebrow"><span class="pulse-dot"></span> Get in touch</div>
+      <h2>Questions? Send a message.</h2>
+      <p>We reply within one business day — usually much sooner.</p>
+      <div class="contact-line"><i class="fas fa-location-dot"></i> Harat Hreik, Beirut, Lebanon</div>
+      <div class="contact-line"><i class="fas fa-phone"></i> +961 81 947 392</div>
+      <div class="contact-line"><i class="fas fa-envelope"></i> support@pulse-electronics.com</div>
+      <div class="contact-line"><i class="fas fa-clock"></i> Mon – Sun, 24/7</div>
+    </div>
+
+    <form class="form-card reveal" id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="field">
+          <label for="cName">Full name</label>
+          <input type="text" id="cName" placeholder="Your name">
+        </div>
+        <div class="field">
+          <label for="cEmail">Email address</label>
+          <input type="text" id="cEmail" placeholder="you@example.com">
+        </div>
+      </div>
+      <div class="field" style="margin-bottom:0;">
+        <label for="cMessage">Message</label>
+        <textarea id="cMessage" placeholder="How can we help?"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-paper-plane"></i> Send Message</button>
+      <p class="form-msg" id="contactMsg"></p>
+    </form>
+  </div>
+</section>
+
+<!-- =================== NEWSLETTER =================== -->
+<section class="section-tight">
+  <div class="container">
+    <div class="newsletter reveal">
+      <div class="newsletter-copy">
+        <h3>Get the first look at new drops</h3>
+        <p>One email a week. New arrivals, restocks, and deals before anyone else sees them.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="text" id="newsletterEmail" placeholder="Enter your email">
+        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+      </form>
+      <p class="newsletter-msg" id="newsletterMsg"></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- =================== FOOTER =================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand">
+          <span class="brand-mark"><i class="fas fa-bolt"></i></span>
+          <span>PULSE<small>ELECTRONICS</small></span>
+        </a>
+        <p>Laptops, phones, accessories and gaming gear for people who don't like sitting still.</p>
+        <div class="social-row">
+          <a href="#" class="icon-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="icon-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icon-btn" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="icon-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#deals">Deals</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <a href="#products" data-cat-link="laptops">Laptops</a>
+        <a href="#products" data-cat-link="phones">Phones</a>
+        <a href="#products" data-cat-link="accessories">Accessories</a>
+        <a href="#products" data-cat-link="gaming">Gaming</a>
+      </div>
+      <div class="footer-col">
+        <h4>Stay Connected</h4>
+        <p style="color:var(--text-muted); font-size:13.8px; margin-bottom:14px;">Follow along for restocks and behind-the-scenes drops.</p>
+        <div class="social-row">
+          <a href="#" class="icon-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="icon-btn" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> PULSE Electronics. All rights reserved.</span>
+      <span>Built with HTML5, CSS3 &amp; vanilla JavaScript.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- =================== PRODUCT DETAILS MODAL =================== -->
+<div class="overlay" id="productModal">
+  <div class="modal-box">
+    <button class="modal-close" id="productModalClose" aria-label="Close"><i class="fas fa-xmark"></i></button>
+    <div class="pm-grid" id="pmContent"><!-- injected by JS --></div>
+  </div>
+</div>
+
+<!-- =================== AUTH MODAL (Login / Sign Up) =================== -->
+<div class="overlay" id="authModal">
+  <div class="modal-box">
+    <button class="modal-close" id="authModalClose" aria-label="Close"><i class="fas fa-xmark"></i></button>
+
+    <div class="auth-tabs">
+      <button class="auth-tab active" data-auth-tab="login">Login</button>
+      <button class="auth-tab" data-auth-tab="signup">Sign Up</button>
+    </div>
+
+    <!-- LOGIN -->
+    <form class="auth-panel active" id="loginPanel" novalidate>
+      <h2 class="auth-title">Welcome back</h2>
+      <p class="auth-sub">Log in to add items to your cart and check out.</p>
+      <div class="field">
+        <label for="loginEmail">Email</label>
+        <input type="text" id="loginEmail" placeholder="admin@gmail.com">
+      </div>
+      <div class="field">
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" placeholder="••••••••">
+      </div>
+      <p class="auth-msg" id="loginMsg"></p>
+      <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-right-to-bracket"></i> Login</button>
+      <p class="auth-hint">Demo account — admin@gmail.com / 123456</p>
+    </form>
+
+    <!-- SIGN UP -->
+    <form class="auth-panel" id="signupPanel" novalidate>
+      <h2 class="auth-title">Create your account</h2>
+      <p class="auth-sub">Takes less than a minute.</p>
+      <div class="field">
+        <label for="signupName">Full name</label>
+        <input type="text" id="signupName" placeholder="Jordan Lee">
+      </div>
+      <div class="field">
+        <label for="signupEmail">Email</label>
+        <input type="text" id="signupEmail" placeholder="you@example.com">
+      </div>
+      <div class="field">
+        <label for="signupPassword">Password</label>
+        <input type="password" id="signupPassword" placeholder="At least 6 characters">
+      </div>
+      <p class="auth-msg" id="signupMsg"></p>
+      <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-user-plus"></i> Sign Up</button>
+    </form>
+  </div>
+</div>
+
+<!-- =================== CART SIDEBAR =================== -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-panel" id="cartPanel" aria-label="Shopping cart">
+  <div class="cart-head">
+    <h3><i class="fas fa-cart-shopping"></i> Your Cart</h3>
+    <button class="icon-btn" id="cartCloseBtn" aria-label="Close cart"><i class="fas fa-xmark"></i></button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <!-- injected by JS -->
+  </div>
+  <div class="cart-foot">
+    <div class="delivery-options" id="deliveryOptions">
+      <span class="delivery-title"><i class="fas fa-truck-fast"></i> Delivery option</span>
+      <label class="delivery-option">
+        <input type="radio" name="deliveryMethod" value="standard" checked>
+        <span class="do-info"><strong>Standard Delivery</strong><small>2–4 business days · Free</small></span>
+      </label>
+      <label class="delivery-option">
+        <input type="radio" name="deliveryMethod" value="express">
+        <span class="do-info"><strong>Express Delivery</strong><small>Within 24 hours · $6.00</small></span>
+      </label>
+    </div>
+    <div class="cart-total-row cart-subtotal-row">
+      <span>Subtotal</span>
+      <strong id="cartSubtotal">$0.00</strong>
+    </div>
+    <div class="cart-total-row cart-delivery-row">
+      <span>Delivery</span>
+      <strong id="cartDeliveryFee">Free</strong>
+    </div>
+    <div class="cart-total-row">
+      <span>Total</span>
+      <strong id="cartTotal">$0.00</strong>
+    </div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn"><i class="fas fa-lock"></i> Checkout</button>
+    <a href="#" class="clear-cart-link" id="clearCartBtn">Clear cart</a>
+  </div>
+</aside>
+
+<!-- =================== TOASTS =================== -->
+<div class="toast-stack" id="toastStack"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
